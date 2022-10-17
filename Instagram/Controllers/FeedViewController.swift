@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FeedViewController.swift
 //  Instagram
 //
 //  Created by Aleksandr Dorofeev on 17.10.2022.

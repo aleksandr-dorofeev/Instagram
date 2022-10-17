@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F847FE1928FDA6F400F2D94B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847FE1828FDA6F400F2D94B /* AppDelegate.swift */; };
 		F847FE1B28FDA6F400F2D94B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847FE1A28FDA6F400F2D94B /* SceneDelegate.swift */; };
-		F847FE1D28FDA6F400F2D94B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847FE1C28FDA6F400F2D94B /* ViewController.swift */; };
+		F847FE1D28FDA6F400F2D94B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F847FE1C28FDA6F400F2D94B /* FeedViewController.swift */; };
 		F847FE2028FDA6F400F2D94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847FE1E28FDA6F400F2D94B /* Main.storyboard */; };
 		F847FE2228FDA6F800F2D94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F847FE2128FDA6F800F2D94B /* Assets.xcassets */; };
 		F847FE2528FDA6F800F2D94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847FE2328FDA6F800F2D94B /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		F847FE1528FDA6F400F2D94B /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F847FE1828FDA6F400F2D94B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F847FE1A28FDA6F400F2D94B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F847FE1C28FDA6F400F2D94B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F847FE1C28FDA6F400F2D94B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		F847FE1F28FDA6F400F2D94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F847FE2128FDA6F800F2D94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F847FE2428FDA6F800F2D94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		F847FE2C28FDA70300F2D94B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F847FE1C28FDA6F400F2D94B /* ViewController.swift */,
+				F847FE1C28FDA6F400F2D94B /* FeedViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F847FE1D28FDA6F400F2D94B /* ViewController.swift in Sources */,
+				F847FE1D28FDA6F400F2D94B /* FeedViewController.swift in Sources */,
 				F847FE1928FDA6F400F2D94B /* AppDelegate.swift in Sources */,
 				F847FE1B28FDA6F400F2D94B /* SceneDelegate.swift in Sources */,
 			);
