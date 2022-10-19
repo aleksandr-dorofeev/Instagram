@@ -13,6 +13,12 @@
 		F847FE2028FDA6F400F2D94B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847FE1E28FDA6F400F2D94B /* Main.storyboard */; };
 		F847FE2228FDA6F800F2D94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F847FE2128FDA6F800F2D94B /* Assets.xcassets */; };
 		F847FE2528FDA6F800F2D94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847FE2328FDA6F800F2D94B /* LaunchScreen.storyboard */; };
+		F847FE4528FDB9E900F2D94B /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847FE4328FDB9E900F2D94B /* Feed.storyboard */; };
+		F8A4018428FDBA8100971E0A /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A4018228FDBA8100971E0A /* Search.storyboard */; };
+		F8D5130729005FDC009743FF /* StoriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5130629005FDC009743FF /* StoriesViewCell.swift */; };
+		F8D5130A29006815009743FF /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D5130829006815009743FF /* Shopping.storyboard */; };
+		F8F33A9828FEF6C100C847FC /* Reels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F33A9628FEF6C100C847FC /* Reels.storyboard */; };
+		F8F33A9D28FEF6FD00C847FC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F33A9B28FEF6FD00C847FC /* Profile.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		F847FE2128FDA6F800F2D94B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F847FE2428FDA6F800F2D94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F847FE2628FDA6F800F2D94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F847FE4428FDB9E900F2D94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
+		F8A4018328FDBA8100971E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Search.storyboard; sourceTree = "<group>"; };
+		F8D5130629005FDC009743FF /* StoriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewCell.swift; sourceTree = "<group>"; };
+		F8D5130929006815009743FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Shopping.storyboard; sourceTree = "<group>"; };
+		F8F33A9728FEF6C100C847FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Reels.storyboard; sourceTree = "<group>"; };
+		F8F33A9C28FEF6FD00C847FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			children = (
 				F847FE1828FDA6F400F2D94B /* AppDelegate.swift */,
 				F847FE1A28FDA6F400F2D94B /* SceneDelegate.swift */,
+				F8D5130529005FC3009743FF /* Cells */,
 				F847FE2C28FDA70300F2D94B /* Controllers */,
 				F847FE2D28FDA74300F2D94B /* Storyboard */,
 				F847FE2128FDA6F800F2D94B /* Assets.xcassets */,
@@ -79,8 +92,21 @@
 			isa = PBXGroup;
 			children = (
 				F847FE1E28FDA6F400F2D94B /* Main.storyboard */,
+				F847FE4328FDB9E900F2D94B /* Feed.storyboard */,
+				F8A4018228FDBA8100971E0A /* Search.storyboard */,
+				F8F33A9628FEF6C100C847FC /* Reels.storyboard */,
+				F8D5130829006815009743FF /* Shopping.storyboard */,
+				F8F33A9B28FEF6FD00C847FC /* Profile.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F8D5130529005FC3009743FF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F8D5130629005FDC009743FF /* StoriesViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +170,12 @@
 			files = (
 				F847FE2528FDA6F800F2D94B /* LaunchScreen.storyboard in Resources */,
 				F847FE2228FDA6F800F2D94B /* Assets.xcassets in Resources */,
+				F8D5130A29006815009743FF /* Shopping.storyboard in Resources */,
+				F8F33A9D28FEF6FD00C847FC /* Profile.storyboard in Resources */,
+				F847FE4528FDB9E900F2D94B /* Feed.storyboard in Resources */,
 				F847FE2028FDA6F400F2D94B /* Main.storyboard in Resources */,
+				F8F33A9828FEF6C100C847FC /* Reels.storyboard in Resources */,
+				F8A4018428FDBA8100971E0A /* Search.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D5130729005FDC009743FF /* StoriesViewCell.swift in Sources */,
 				F847FE1D28FDA6F400F2D94B /* FeedViewController.swift in Sources */,
 				F847FE1928FDA6F400F2D94B /* AppDelegate.swift in Sources */,
 				F847FE1B28FDA6F400F2D94B /* SceneDelegate.swift in Sources */,
@@ -200,6 +232,46 @@
 				F847FE2428FDA6F800F2D94B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F847FE4328FDB9E900F2D94B /* Feed.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F847FE4428FDB9E900F2D94B /* Base */,
+			);
+			name = Feed.storyboard;
+			sourceTree = "<group>";
+		};
+		F8A4018228FDBA8100971E0A /* Search.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A4018328FDBA8100971E0A /* Base */,
+			);
+			name = Search.storyboard;
+			sourceTree = "<group>";
+		};
+		F8D5130829006815009743FF /* Shopping.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8D5130929006815009743FF /* Base */,
+			);
+			name = Shopping.storyboard;
+			sourceTree = "<group>";
+		};
+		F8F33A9628FEF6C100C847FC /* Reels.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F33A9728FEF6C100C847FC /* Base */,
+			);
+			name = Reels.storyboard;
+			sourceTree = "<group>";
+		};
+		F8F33A9B28FEF6FD00C847FC /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F33A9C28FEF6FD00C847FC /* Base */,
+			);
+			name = Profile.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
