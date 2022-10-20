@@ -800,27 +800,40 @@
                                         <rect key="frame" x="19" y="4.6666666666666643" width="117" height="33"/>
                                         <color key="tintColor" name="BarTintColor"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="8db-YH-Jky">
-                                        <rect key="frame" x="274" y="10" width="108" height="24"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="8db-YH-Jky">
+                                        <rect key="frame" x="226" y="3" width="156" height="38"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add" translatesAutoresizingMaskIntoConstraints="NO" id="I5l-Tf-fOb">
-                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7s-xh-pII">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="38"/>
                                                 <color key="tintColor" name="BarTintColor"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="R1n-rB-gZG">
-                                                <rect key="frame" x="42" y="0.0" width="24" height="24"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Add"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiG-IX-DQJ">
+                                                <rect key="frame" x="54" y="0.0" width="48" height="38"/>
                                                 <color key="tintColor" name="BarTintColor"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messege" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-Tq-mt0">
-                                                <rect key="frame" x="84" y="0.0" width="24" height="24"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="Heart"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1E4-Cj-tc9">
+                                                <rect key="frame" x="108" y="0.0" width="48" height="38"/>
                                                 <color key="tintColor" name="BarTintColor"/>
-                                            </imageView>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="messege"/>
+                                            </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1E4-Cj-tc9" firstAttribute="leading" secondItem="SiG-IX-DQJ" secondAttribute="trailing" constant="6" id="G8r-9x-Dcl"/>
+                                            <constraint firstItem="SiG-IX-DQJ" firstAttribute="leading" secondItem="t7s-xh-pII" secondAttribute="trailing" constant="6" id="K1O-Uc-RZB"/>
+                                            <constraint firstAttribute="trailing" secondItem="1E4-Cj-tc9" secondAttribute="trailing" id="Ruj-tT-noL"/>
+                                            <constraint firstItem="t7s-xh-pII" firstAttribute="leading" secondItem="8db-YH-Jky" secondAttribute="leading" id="Wdg-UW-5hI"/>
+                                            <constraint firstItem="1E4-Cj-tc9" firstAttribute="top" secondItem="8db-YH-Jky" secondAttribute="top" id="eyH-In-jzw"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" name="ApperanceColor"/>
                                 <constraints>
-                                    <constraint firstItem="8db-YH-Jky" firstAttribute="top" secondItem="i9c-LL-uLS" secondAttribute="top" constant="10" id="CkR-gc-son"/>
+                                    <constraint firstItem="8db-YH-Jky" firstAttribute="top" secondItem="i9c-LL-uLS" secondAttribute="top" constant="3" id="CkR-gc-son"/>
                                     <constraint firstAttribute="trailing" secondItem="8db-YH-Jky" secondAttribute="trailing" constant="8" id="KDL-r0-wDy"/>
                                     <constraint firstItem="G30-LH-faZ" firstAttribute="leading" secondItem="i9c-LL-uLS" secondAttribute="leading" constant="19" id="ZEB-v5-zxl"/>
                                     <constraint firstItem="G30-LH-faZ" firstAttribute="top" secondItem="i9c-LL-uLS" secondAttribute="top" constant="4.6666666666666643" id="kdi-pz-vjy"/>
