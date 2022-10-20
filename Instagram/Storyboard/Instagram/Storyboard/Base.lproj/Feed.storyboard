@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ch2-uw-e9D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vnt-iv-TLK">
     <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -9,34 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="QDX-wv-pYV">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ch2-uw-e9D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="HomeFill" id="sd8-2G-SIb"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fLG-Uc-uFC">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="BarTintColor"/>
-                        <color key="barTintColor" name="BarTintColor"/>
-                        <navigationBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" name="ApperanceColor"/>
-                        </navigationBarAppearance>
-                        <navigationBarAppearance key="scrollEdgeAppearance">
-                            <color key="backgroundColor" name="ApperanceColor"/>
-                        </navigationBarAppearance>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vnt-iv-TLK" kind="relationship" relationship="rootViewController" id="I2U-uY-1x8"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pyq-Ab-KFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="227.69230769230768" y="-886.49289099526061"/>
-        </scene>
-        <!--Instagram-->
+        <!--Feed View Controller-->
         <scene sceneID="ty3-2K-MNW">
             <objects>
                 <viewController id="vnt-iv-TLK" customClass="FeedViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GpN-Th-MSJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GpN-Th-MSJ">
                                 <rect key="frame" x="0.0" y="91" width="390" height="753"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoriesCell" rowHeight="96" id="mHJ-iD-gvd" customClass="StoriesViewCell" customModule="Instagram" customModuleProvider="target">
@@ -820,13 +792,52 @@
                                     <outlet property="dataSource" destination="vnt-iv-TLK" id="x2j-Wl-pYN"/>
                                 </connections>
                             </tableView>
+                            <view contentMode="scaleToFill" id="i9c-LL-uLS">
+                                <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoInst" translatesAutoresizingMaskIntoConstraints="NO" id="G30-LH-faZ">
+                                        <rect key="frame" x="19" y="4.6666666666666643" width="117" height="33"/>
+                                        <color key="tintColor" name="BarTintColor"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8db-YH-Jky">
+                                        <rect key="frame" x="290" y="10" width="92" height="24"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add" translatesAutoresizingMaskIntoConstraints="NO" id="I5l-Tf-fOb">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <color key="tintColor" name="BarTintColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart" translatesAutoresizingMaskIntoConstraints="NO" id="R1n-rB-gZG">
+                                                <rect key="frame" x="34" y="0.0" width="24" height="24"/>
+                                                <color key="tintColor" name="BarTintColor"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messege" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-Tq-mt0">
+                                                <rect key="frame" x="68" y="0.0" width="24" height="24"/>
+                                                <color key="tintColor" name="BarTintColor"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="ApperanceColor"/>
+                                <constraints>
+                                    <constraint firstItem="8db-YH-Jky" firstAttribute="top" secondItem="i9c-LL-uLS" secondAttribute="top" constant="10" id="CkR-gc-son"/>
+                                    <constraint firstAttribute="trailing" secondItem="8db-YH-Jky" secondAttribute="trailing" constant="8" id="KDL-r0-wDy"/>
+                                    <constraint firstItem="G30-LH-faZ" firstAttribute="leading" secondItem="i9c-LL-uLS" secondAttribute="leading" constant="19" id="ZEB-v5-zxl"/>
+                                    <constraint firstItem="G30-LH-faZ" firstAttribute="top" secondItem="i9c-LL-uLS" secondAttribute="top" constant="4.6666666666666643" id="kdi-pz-vjy"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EQ2-qe-WWK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GpN-Th-MSJ" firstAttribute="trailing" secondItem="i9c-LL-uLS" secondAttribute="trailing" id="BL9-gN-tuk"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="GpN-Th-MSJ" secondAttribute="bottom" constant="-83" id="CqE-3E-89O"/>
+                            <constraint firstItem="i9c-LL-uLS" firstAttribute="leading" secondItem="GpN-Th-MSJ" secondAttribute="leading" id="RXx-BJ-j62"/>
+                            <constraint firstItem="GpN-Th-MSJ" firstAttribute="top" secondItem="i9c-LL-uLS" secondAttribute="bottom" id="Z6S-VU-2Dr"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Instagram" id="NiU-iu-fly">
-                        <barButtonItem key="rightBarButtonItem" image="Comment" id="yyY-6M-wex"/>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="" image="Home" selectedImage="HomeFill" id="sd8-2G-SIb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="GpN-Th-MSJ" id="e74-4E-qu8"/>
                     </connections>
@@ -837,6 +848,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Add" width="24" height="24"/>
         <image name="Comment" width="23" height="23"/>
         <image name="Direct" width="25" height="23"/>
         <image name="Heart" width="24" height="22"/>
@@ -846,6 +858,8 @@
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="gangster" width="1016" height="919"/>
         <image name="hasb" width="2048" height="2048"/>
+        <image name="logoInst" width="117" height="33"/>
+        <image name="messege" width="24" height="24"/>
         <image name="plus.circle" catalog="system" width="128" height="123"/>
         <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
         <image name="police" width="700" height="754"/>
@@ -860,10 +874,10 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="Gray">
-            <color red="0.28354190455858452" green="0.30929027103446433" blue="0.35164741823633627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.28400000929832458" green="0.30899998545646667" blue="0.35199999809265137" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="MuteDark">
-            <color red="0.11017373950000001" green="0.1047841981" blue="0.15294668080000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.10999999940395355" green="0.10499999672174454" blue="0.15299999713897705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
