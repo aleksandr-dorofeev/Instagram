@@ -108,7 +108,7 @@ custom_rules:
     name: "Лишнее указание типа"
     regex: "(var|let) \\w*: Double = \\d"
     message: "Не указывай тип"
-    severity: error 
+    severity: error
     
   custom_types_Date:
     name: "Лишнее указание типа"
