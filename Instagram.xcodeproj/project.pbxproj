@@ -15,6 +15,7 @@
 		F847FE2528FDA6F800F2D94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847FE2328FDA6F800F2D94B /* LaunchScreen.storyboard */; };
 		F847FE4528FDB9E900F2D94B /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847FE4328FDB9E900F2D94B /* Feed.storyboard */; };
 		F8A4018428FDBA8100971E0A /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A4018228FDBA8100971E0A /* Search.storyboard */; };
+		F8C0ED3F2901B2D900B81FF4 /* ActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0ED3E2901B2D900B81FF4 /* ActionsViewController.swift */; };
 		F8D5130729005FDC009743FF /* StoriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5130629005FDC009743FF /* StoriesViewCell.swift */; };
 		F8D5130A29006815009743FF /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D5130829006815009743FF /* Shopping.storyboard */; };
 		F8F33A9828FEF6C100C847FC /* Reels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F33A9628FEF6C100C847FC /* Reels.storyboard */; };
@@ -32,6 +33,7 @@
 		F847FE2628FDA6F800F2D94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F847FE4428FDB9E900F2D94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
 		F8A4018328FDBA8100971E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Search.storyboard; sourceTree = "<group>"; };
+		F8C0ED3E2901B2D900B81FF4 /* ActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewController.swift; sourceTree = "<group>"; };
 		F8D5130629005FDC009743FF /* StoriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewCell.swift; sourceTree = "<group>"; };
 		F8D5130929006815009743FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Shopping.storyboard; sourceTree = "<group>"; };
 		F8F33A9728FEF6C100C847FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Reels.storyboard; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				F847FE1C28FDA6F400F2D94B /* FeedViewController.swift */,
+				F8C0ED3E2901B2D900B81FF4 /* ActionsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				F8D5130729005FDC009743FF /* StoriesViewCell.swift in Sources */,
 				F847FE1D28FDA6F400F2D94B /* FeedViewController.swift in Sources */,
 				F847FE1928FDA6F400F2D94B /* AppDelegate.swift in Sources */,
+				F8C0ED3F2901B2D900B81FF4 /* ActionsViewController.swift in Sources */,
 				F847FE1B28FDA6F400F2D94B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
