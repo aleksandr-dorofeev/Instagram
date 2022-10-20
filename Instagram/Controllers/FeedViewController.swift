@@ -7,27 +7,27 @@
 
 import UIKit
 
-/// Feed screen.
+/// Feed screen with stories, posts and recommendation.
 final class FeedViewController: UIViewController {
   
   // MARK: - Private enum.
-  private enum Items {
-      case stories
-      case post
-      case recommendation
+  private enum CellType {
+    case stories
+    case post
+    case recommendation
   }
   
   // MARK: - Private Constants.
   private enum Constants {
-    static let storyCellId = "StoriesCell"
-    static let postCellId = "PostCell"
-    static let recommendationCellId = "RecommendationCell"
+    static let storyCellID = "StoriesCell"
+    static let postCellID = "PostCell"
+    static let recommendationCellID = "RecommendationCell"
   }
   
   // MARK: - Private Visual components.
+  private let refreshControl = UIRefreshControl()
   @IBOutlet private weak var tableView: UITableView!
-  private lazy var refreshControl = UIRefreshControl()
-    
+  
   // MARK: - Life cycle.
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -49,19 +49,19 @@ final class FeedViewController: UIViewController {
     tableView.rowHeight = UITableView.automaticDimension
   }
   
-  private func addItems() -> [Items] {
-      var items: [Items] = [Items]()
-      items.append(Items.stories)
-      items.append(Items.post)
-      items.append(Items.recommendation)
-      items.append(Items.post)
-      items.append(Items.post)
-      return items
+  private func addItems() -> [CellType] {
+    var items: [CellType] = [CellType]()
+    items.append(CellType.stories)
+    items.append(CellType.post)
+    items.append(CellType.recommendation)
+    items.append(CellType.post)
+    items.append(CellType.post)
+    return items
   }
   
   // MARK: - Private actions.
   @objc private func refreshAction(_ sender: Any) {
-      refreshControl.endRefreshing()
+    refreshControl.endRefreshing()
   }
 }
 
@@ -77,15 +77,15 @@ extension FeedViewController: UITableViewDataSource {
     let item = addItems()[indexPath.row]
     switch item {
     case .stories:
-      let cell = tableView.dequeueReusableCell(withIdentifier: Constants.storyCellId,
+      let cell = tableView.dequeueReusableCell(withIdentifier: Constants.storyCellID,
                                                for: indexPath)
       return cell
     case .post:
-      let cell = tableView.dequeueReusableCell(withIdentifier: Constants.postCellId,
+      let cell = tableView.dequeueReusableCell(withIdentifier: Constants.postCellID,
                                                for: indexPath)
       return cell
     case .recommendation:
-      let cell = tableView.dequeueReusableCell(withIdentifier: Constants.recommendationCellId,
+      let cell = tableView.dequeueReusableCell(withIdentifier: Constants.recommendationCellID,
                                                for: indexPath)
       return cell
     }

@@ -7,22 +7,22 @@
 
 import UIKit
 
-/// StoryCell configuration.
+/// Stories cell.
 final class StoriesViewCell: UITableViewCell {
   
   // MARK: - Private Constants.
   private enum Constants {
-    static let colorGradient = "Gradient"
+    static let colorGradientName = "Gradient"
   }
   
   // MARK: - Private Visual components.
   @IBOutlet private var storyImages: [UIImageView]!
   
   // MARK: - Life cycle.
-    override func awakeFromNib() {
-        super.awakeFromNib()
-      setupUI()
-    }
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    setupUI()
+  }
   
   // MARK: - Setup UI.
   private func setupUI() {
@@ -32,7 +32,7 @@ final class StoriesViewCell: UITableViewCell {
   private func setupBorderForStoryImages() {
     for image in storyImages {
       image.layer.borderWidth = 2
-      image.layer.borderColor = UIColor(named: Constants.colorGradient)?.cgColor
+      image.layer.borderColor = UIColor(named: Constants.colorGradientName)?.cgColor
     }
   }
 }
