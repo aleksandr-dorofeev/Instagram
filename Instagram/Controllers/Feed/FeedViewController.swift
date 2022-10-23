@@ -33,7 +33,7 @@ final class FeedViewController: UIViewController {
     super.viewDidLoad()
     setupUI()
   }
-  
+
   // MARK: - Setup UI.
   private func setupUI() {
     configureRefresh()

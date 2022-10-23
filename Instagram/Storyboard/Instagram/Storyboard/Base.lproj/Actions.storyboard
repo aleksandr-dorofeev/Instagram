@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DHz-SX-RbR">
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lWU-sZ-OkK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="DHz-SX-RbR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="Heart" selectedImage="HeartFill" id="zCY-8W-eHO"/>
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vad-rs-RED">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zOg-vd-3H5" kind="relationship" relationship="rootViewController" id="4kQ-UJ-K2W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y8x-Kp-8A5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.53846153846155" y="-250.23696682464453"/>
+        </scene>
+        <!--Actions View Controller-->
+        <scene sceneID="9BZ-c3-2qn">
+            <objects>
+                <viewController id="zOg-vd-3H5" customClass="ActionsViewController" customModule="Insta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KCf-Np-wDx">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaj-X9-SKI">
+                                <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Действия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8A-v6-Z6U">
+                                        <rect key="frame" x="18" y="0.0" width="93" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="A8A-v6-Z6U" firstAttribute="centerY" secondItem="iaj-X9-SKI" secondAttribute="centerY" constant="-10" id="2lT-Nq-g4w"/>
+                                    <constraint firstItem="A8A-v6-Z6U" firstAttribute="leading" secondItem="iaj-X9-SKI" secondAttribute="leading" constant="18" id="eyP-aH-IMn"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="A8A-v6-Z6U" secondAttribute="trailing" constant="20" symbolic="YES" id="lZ7-vN-xyh"/>
+                                    <constraint firstAttribute="height" constant="44" id="oHz-nf-jxh"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oT2-JE-d1P">
+                                <rect key="frame" x="0.0" y="96" width="390" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="zOg-vd-3H5" id="6fp-jv-yAq"/>
+                                    <outlet property="delegate" destination="zOg-vd-3H5" id="eZq-Xd-vkK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6CP-1y-HPk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iaj-X9-SKI" firstAttribute="top" secondItem="6CP-1y-HPk" secondAttribute="top" id="CeF-6P-HLD"/>
+                            <constraint firstItem="iaj-X9-SKI" firstAttribute="trailing" secondItem="6CP-1y-HPk" secondAttribute="trailing" id="MH2-bd-QoG"/>
+                            <constraint firstItem="iaj-X9-SKI" firstAttribute="leading" secondItem="6CP-1y-HPk" secondAttribute="leading" id="OGg-4S-uNe"/>
+                            <constraint firstItem="oT2-JE-d1P" firstAttribute="top" secondItem="iaj-X9-SKI" secondAttribute="bottom" constant="5" id="OOy-fJ-ZG3"/>
+                            <constraint firstItem="oT2-JE-d1P" firstAttribute="leading" secondItem="6CP-1y-HPk" secondAttribute="leading" id="afM-26-EDC"/>
+                            <constraint firstItem="6CP-1y-HPk" firstAttribute="bottom" secondItem="oT2-JE-d1P" secondAttribute="bottom" id="osK-TA-O3x"/>
+                            <constraint firstItem="oT2-JE-d1P" firstAttribute="trailing" secondItem="6CP-1y-HPk" secondAttribute="trailing" id="tjI-st-uV0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="heartOutline" selectedImage="heartFillBlack" id="VBQ-L4-bc0"/>
+                    <navigationItem key="navigationItem" id="LYb-xV-QeV"/>
+                    <connections>
+                        <outlet property="tableView" destination="oT2-JE-d1P" id="1zW-hm-fJE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KzA-LZ-lDD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981.53846153846155" y="-250.23696682464453"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Heart" width="24" height="22"/>
+        <image name="HeartFill" width="24" height="22"/>
+        <image name="heartFillBlack" width="24" height="22"/>
+        <image name="heartOutline" width="24" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
