@@ -14,10 +14,19 @@
 		F847FE2228FDA6F800F2D94B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F847FE2128FDA6F800F2D94B /* Assets.xcassets */; };
 		F847FE2528FDA6F800F2D94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847FE2328FDA6F800F2D94B /* LaunchScreen.storyboard */; };
 		F847FE4528FDB9E900F2D94B /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F847FE4328FDB9E900F2D94B /* Feed.storyboard */; };
+		F84FCBF72905304400437871 /* ActionContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84FCBF62905304400437871 /* ActionContent.swift */; };
+		F84FCBFD290548FB00437871 /* SubscribeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84FCBFB290548FB00437871 /* SubscribeTableViewCell.swift */; };
+		F84FCBFE290548FB00437871 /* SubscribeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84FCBFC290548FB00437871 /* SubscribeTableViewCell.xib */; };
+		F84FCC0129054A5800437871 /* NSMutableAttributedString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84FCC0029054A5800437871 /* NSMutableAttributedString+Extension.swift */; };
+		F84FCC0329054AD600437871 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84FCC0229054AD600437871 /* String+Extension.swift */; };
+		F84FCC0629054BA500437871 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84FCC0429054BA500437871 /* PostTableViewCell.swift */; };
+		F84FCC0929054BBB00437871 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84FCC0829054BBB00437871 /* PostTableViewCell.xib */; };
+		F84FCC0C29055DF500437871 /* SubscribeRequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84FCC0A29055DF500437871 /* SubscribeRequestTableViewCell.swift */; };
+		F84FCC0D29055DF500437871 /* SubscribeRequestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F84FCC0B29055DF500437871 /* SubscribeRequestTableViewCell.xib */; };
 		F8A4018428FDBA8100971E0A /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A4018228FDBA8100971E0A /* Search.storyboard */; };
 		F8C0ED3F2901B2D900B81FF4 /* ActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0ED3E2901B2D900B81FF4 /* ActionsViewController.swift */; };
 		F8D5130729005FDC009743FF /* StoriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5130629005FDC009743FF /* StoriesViewCell.swift */; };
-		F8D5130A29006815009743FF /* Shopping.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D5130829006815009743FF /* Shopping.storyboard */; };
+		F8D5130A29006815009743FF /* Actions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D5130829006815009743FF /* Actions.storyboard */; };
 		F8F33A9828FEF6C100C847FC /* Reels.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F33A9628FEF6C100C847FC /* Reels.storyboard */; };
 		F8F33A9D28FEF6FD00C847FC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F33A9B28FEF6FD00C847FC /* Profile.storyboard */; };
 /* End PBXBuildFile section */
@@ -32,10 +41,19 @@
 		F847FE2428FDA6F800F2D94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F847FE2628FDA6F800F2D94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F847FE4428FDB9E900F2D94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
+		F84FCBF62905304400437871 /* ActionContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionContent.swift; sourceTree = "<group>"; };
+		F84FCBFB290548FB00437871 /* SubscribeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTableViewCell.swift; sourceTree = "<group>"; };
+		F84FCBFC290548FB00437871 /* SubscribeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeTableViewCell.xib; sourceTree = "<group>"; };
+		F84FCC0029054A5800437871 /* NSMutableAttributedString+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extension.swift"; sourceTree = "<group>"; };
+		F84FCC0229054AD600437871 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F84FCC0429054BA500437871 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		F84FCC0829054BBB00437871 /* PostTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		F84FCC0A29055DF500437871 /* SubscribeRequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeRequestTableViewCell.swift; sourceTree = "<group>"; };
+		F84FCC0B29055DF500437871 /* SubscribeRequestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeRequestTableViewCell.xib; sourceTree = "<group>"; };
 		F8A4018328FDBA8100971E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Search.storyboard; sourceTree = "<group>"; };
 		F8C0ED3E2901B2D900B81FF4 /* ActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewController.swift; sourceTree = "<group>"; };
 		F8D5130629005FDC009743FF /* StoriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewCell.swift; sourceTree = "<group>"; };
-		F8D5130929006815009743FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Shopping.storyboard; sourceTree = "<group>"; };
+		F8D5130929006815009743FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Actions.storyboard; sourceTree = "<group>"; };
 		F8F33A9728FEF6C100C847FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Reels.storyboard; sourceTree = "<group>"; };
 		F8F33A9C28FEF6FD00C847FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Instagram/Storyboard/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +90,7 @@
 			children = (
 				F847FE1828FDA6F400F2D94B /* AppDelegate.swift */,
 				F847FE1A28FDA6F400F2D94B /* SceneDelegate.swift */,
-				F8D5130529005FC3009743FF /* Cells */,
+				F84FCBFF29054A3200437871 /* Extensions */,
 				F847FE2C28FDA70300F2D94B /* Controllers */,
 				F847FE2D28FDA74300F2D94B /* Storyboard */,
 				F847FE2128FDA6F800F2D94B /* Assets.xcassets */,
@@ -85,8 +103,8 @@
 		F847FE2C28FDA70300F2D94B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F847FE1C28FDA6F400F2D94B /* FeedViewController.swift */,
-				F8C0ED3E2901B2D900B81FF4 /* ActionsViewController.swift */,
+				F84FCBF42905301A00437871 /* Feed */,
+				F84FCBF32905300800437871 /* Actions */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -98,10 +116,59 @@
 				F847FE4328FDB9E900F2D94B /* Feed.storyboard */,
 				F8A4018228FDBA8100971E0A /* Search.storyboard */,
 				F8F33A9628FEF6C100C847FC /* Reels.storyboard */,
-				F8D5130829006815009743FF /* Shopping.storyboard */,
+				F8D5130829006815009743FF /* Actions.storyboard */,
 				F8F33A9B28FEF6FD00C847FC /* Profile.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		F84FCBF32905300800437871 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				F84FCBF52905302600437871 /* Model */,
+				F84FCBF82905489500437871 /* Cells */,
+				F8C0ED3E2901B2D900B81FF4 /* ActionsViewController.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		F84FCBF42905301A00437871 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F8D5130529005FC3009743FF /* Cells */,
+				F847FE1C28FDA6F400F2D94B /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F84FCBF52905302600437871 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F84FCBF62905304400437871 /* ActionContent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F84FCBF82905489500437871 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F84FCBFB290548FB00437871 /* SubscribeTableViewCell.swift */,
+				F84FCBFC290548FB00437871 /* SubscribeTableViewCell.xib */,
+				F84FCC0429054BA500437871 /* PostTableViewCell.swift */,
+				F84FCC0829054BBB00437871 /* PostTableViewCell.xib */,
+				F84FCC0A29055DF500437871 /* SubscribeRequestTableViewCell.swift */,
+				F84FCC0B29055DF500437871 /* SubscribeRequestTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F84FCBFF29054A3200437871 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F84FCC0029054A5800437871 /* NSMutableAttributedString+Extension.swift */,
+				F84FCC0229054AD600437871 /* String+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F8D5130529005FC3009743FF /* Cells */ = {
@@ -171,10 +238,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84FCC0D29055DF500437871 /* SubscribeRequestTableViewCell.xib in Resources */,
 				F847FE2528FDA6F800F2D94B /* LaunchScreen.storyboard in Resources */,
+				F84FCC0929054BBB00437871 /* PostTableViewCell.xib in Resources */,
 				F847FE2228FDA6F800F2D94B /* Assets.xcassets in Resources */,
-				F8D5130A29006815009743FF /* Shopping.storyboard in Resources */,
+				F8D5130A29006815009743FF /* Actions.storyboard in Resources */,
 				F8F33A9D28FEF6FD00C847FC /* Profile.storyboard in Resources */,
+				F84FCBFE290548FB00437871 /* SubscribeTableViewCell.xib in Resources */,
 				F847FE4528FDB9E900F2D94B /* Feed.storyboard in Resources */,
 				F847FE2028FDA6F400F2D94B /* Main.storyboard in Resources */,
 				F8F33A9828FEF6C100C847FC /* Reels.storyboard in Resources */,
@@ -211,10 +281,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84FCC0129054A5800437871 /* NSMutableAttributedString+Extension.swift in Sources */,
+				F84FCC0329054AD600437871 /* String+Extension.swift in Sources */,
 				F8D5130729005FDC009743FF /* StoriesViewCell.swift in Sources */,
 				F847FE1D28FDA6F400F2D94B /* FeedViewController.swift in Sources */,
 				F847FE1928FDA6F400F2D94B /* AppDelegate.swift in Sources */,
+				F84FCBF72905304400437871 /* ActionContent.swift in Sources */,
+				F84FCBFD290548FB00437871 /* SubscribeTableViewCell.swift in Sources */,
+				F84FCC0629054BA500437871 /* PostTableViewCell.swift in Sources */,
 				F8C0ED3F2901B2D900B81FF4 /* ActionsViewController.swift in Sources */,
+				F84FCC0C29055DF500437871 /* SubscribeRequestTableViewCell.swift in Sources */,
 				F847FE1B28FDA6F400F2D94B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,12 +330,12 @@
 			name = Search.storyboard;
 			sourceTree = "<group>";
 		};
-		F8D5130829006815009743FF /* Shopping.storyboard */ = {
+		F8D5130829006815009743FF /* Actions.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F8D5130929006815009743FF /* Base */,
 			);
-			name = Shopping.storyboard;
+			name = Actions.storyboard;
 			sourceTree = "<group>";
 		};
 		F8F33A9628FEF6C100C847FC /* Reels.storyboard */ = {
