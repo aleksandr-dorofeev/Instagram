@@ -9,7 +9,4 @@ import UIKit
 
 /// Subscribe request cell.
 final class SubscribeRequestTableViewCell: UITableViewCell {
-   
-  // MARK: - Private @IBOutlet.
-  @IBOutlet private weak var subscribeRequestLabel: UILabel!
 }
