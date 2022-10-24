@@ -8,9 +8,9 @@
 import Foundation
 
 /// Model for highlights of profile
-/// - highlightImageName: name of highlight image
-/// - highlightName: name of highlight
 struct ProfileHighlight {
+  /// Name of highlight image.
   var highlightImageName: String
+  /// Name of highlight.
   var highlightName: String
 }

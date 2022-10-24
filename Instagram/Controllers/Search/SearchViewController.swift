@@ -102,6 +102,7 @@ final class SearchViewController: UIViewController {
                                                highlightName: Constants.fithHighlightName),
                               ProfileHighlight(highlightImageName: Constants.eleganceHasbikImageName,
                                                highlightName: Constants.sixthHighlightName)]
+  
   // MARK: - Life cycle.
   override func viewDidLoad() {
     super.viewDidLoad()

@@ -8,21 +8,21 @@
 import Foundation
 
 /// Cell with description of profile
-/// - profileImageName: Name of profile
-/// - postsAmount: posts amount
-/// - subscribersAmount: subscribers amount
-/// - subscriptionsAmount: subscriptions amount
-/// - profileName: name of profile
-/// - typeOfAccountText: type of profile
-/// - descriptionText: description of profile
-/// - similarSubscribesText: the same subscribes
 struct ProfileDescription {
+  /// Name of image profile.
   var profileImageName: String
+  /// Posts amount.
   var postsAmount: String
+  /// Subscribers amount.
   var subscribersAmount: String
+  /// Subscriptions amount.
   var subscriptionsAmount: String
+  /// Name of profile.
   var profileName: String
+  /// Type of profile.
   var typeOfAccountText: String
+  /// Description of profile.
   var descriptionText: String
+  /// Same subscribes.
   var sameSubscribesText: String
 }

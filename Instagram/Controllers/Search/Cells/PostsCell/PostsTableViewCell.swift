@@ -20,7 +20,7 @@ final class PostsTableViewCell: UITableViewCell {
   @IBOutlet private weak var postsCollectionView: UICollectionView!
   
   // MARK: - Private properties.
-  private var postsCollection: [Post]?
+  private var posts: [Post]?
   
   // MARK: - Life cycle.
   override func awakeFromNib() {
@@ -30,7 +30,7 @@ final class PostsTableViewCell: UITableViewCell {
   
   // MARK: - Public methods.
   func configureCell(postsCollections: [Post], viewHight: CGFloat) {
-    self.postsCollection = postsCollections
+    self.posts = postsCollections
     postsCollectionView.translatesAutoresizingMaskIntoConstraints = false
     postsCollectionView.heightAnchor.constraint(
       equalToConstant: viewHight).isActive = true
@@ -48,7 +48,7 @@ final class PostsTableViewCell: UITableViewCell {
 extension PostsTableViewCell: UICollectionViewDataSource {
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-      return postsCollection?.count ?? 0
+      return posts?.count ?? 0
   }
   
   func collectionView(_ collectionView: UICollectionView,
@@ -59,7 +59,7 @@ extension PostsTableViewCell: UICollectionViewDataSource {
       else {
           return UICollectionViewCell()
       }
-      postCell.configureCell(post: postsCollection?[indexPath.row])
+      postCell.configureCell(post: posts?[indexPath.row])
       return postCell
   }
 }
