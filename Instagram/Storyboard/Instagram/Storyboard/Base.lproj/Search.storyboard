@@ -3,30 +3,88 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search View Controller-->
         <scene sceneID="3Rb-JI-iQ7">
             <objects>
-                <viewController id="BA0-t5-Hfg" sceneMemberID="viewController">
+                <viewController id="BA0-t5-Hfg" customClass="SearchViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aqx-Cw-c3R">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="vLd-lr-ngF">
+                                <rect key="frame" x="0.0" y="35" width="391.66666666666669" height="34.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHN-SA-loZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="34.333333333333336"/>
+                                        <color key="tintColor" name="BarTintColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="">
+                                            <imageReference key="image" image="chevron.backward" catalog="system" symbolScale="medium"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hasbulla.hushetskiy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hu-2B-5fQ">
+                                        <rect key="frame" x="115.33333333333333" y="0.0" width="152.33333333333337" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ed8-LL-LDW">
+                                        <rect key="frame" x="345.66666666666669" y="0.0" width="46" height="34.333333333333336"/>
+                                        <color key="tintColor" name="BarTintColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="">
+                                            <imageReference key="image" image="ellipsis" catalog="system" symbolScale="medium"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34.333333333333343" id="nfy-6T-Ll0"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" separatorInsetReference="fromAutomaticInsets" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GzZ-LC-1Bc" userLabel="Searched Profile Table View">
+                                <rect key="frame" x="0.0" y="69.333333333333314" width="392" height="774.66666666666674"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BA0-t5-Hfg" id="PCq-Gv-p0i"/>
+                                    <outlet property="delegate" destination="BA0-t5-Hfg" id="VWX-iU-lWp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ooH-wT-ouE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vLd-lr-ngF" firstAttribute="leading" secondItem="ooH-wT-ouE" secondAttribute="leading" id="1oU-90-OMw"/>
+                            <constraint firstItem="GzZ-LC-1Bc" firstAttribute="top" secondItem="vLd-lr-ngF" secondAttribute="bottom" id="ETW-kG-yzr"/>
+                            <constraint firstItem="vLd-lr-ngF" firstAttribute="trailing" secondItem="ooH-wT-ouE" secondAttribute="trailing" constant="1.6666666666666856" id="Ffh-iG-WXn"/>
+                            <constraint firstItem="GzZ-LC-1Bc" firstAttribute="trailing" secondItem="ooH-wT-ouE" secondAttribute="trailing" constant="2" id="Neb-Ok-OmO"/>
+                            <constraint firstItem="GzZ-LC-1Bc" firstAttribute="leading" secondItem="ooH-wT-ouE" secondAttribute="leading" id="SuH-ej-UYI"/>
+                            <constraint firstItem="GzZ-LC-1Bc" firstAttribute="bottom" secondItem="ooH-wT-ouE" secondAttribute="bottom" constant="34" id="Wdh-fY-mKj"/>
+                            <constraint firstItem="ooH-wT-ouE" firstAttribute="top" secondItem="vLd-lr-ngF" secondAttribute="top" constant="12" id="zua-nW-WOk"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Search" id="Gah-Qn-kui"/>
+                    <connections>
+                        <outlet property="searchedProfileTableView" destination="GzZ-LC-1Bc" id="5Rq-7f-AZ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edo-i0-glq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="228" y="-443"/>
+            <point key="canvasLocation" x="227.69230769230768" y="-443.60189573459712"/>
         </scene>
     </scenes>
     <resources>
         <image name="Search" width="23" height="24"/>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
+        <namedColor name="BarTintColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

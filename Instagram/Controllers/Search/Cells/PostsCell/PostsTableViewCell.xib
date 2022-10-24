@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostsCell" rowHeight="223" id="KGk-i7-Jjw" customClass="PostsTableViewCell" customModule="Instagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rm-2T-PSA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="78" translatesAutoresizingMaskIntoConstraints="NO" id="Jmr-zT-3PM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nz8-0B-QDn">
+                                        <rect key="frame" x="0.0" y="0.0" width="54.666666666666664" height="38"/>
+                                        <color key="tintColor" name="BarTintColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="squareshape.split.3x3" catalog="system" symbolScale="large"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9h-91-l56">
+                                        <rect key="frame" x="132.66666666666666" y="0.0" width="54.666666666666657" height="38"/>
+                                        <color key="tintColor" name="BarTintColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="Reel"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lV-bR-wBz">
+                                        <rect key="frame" x="265.33333333333331" y="0.0" width="54.666666666666686" height="38"/>
+                                        <color key="tintColor" name="BarTintColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="person.crop.rectangle" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="6ow-Vd-zmf"/>
+                                </constraints>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="4Ki-UB-yZ3">
+                                <rect key="frame" x="0.0" y="38" width="320" height="155"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="UKq-et-0l1">
+                                    <size key="itemSize" width="130" height="130"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Ki-UB-yZ3" firstAttribute="top" secondItem="Jmr-zT-3PM" secondAttribute="bottom" id="9o7-yz-gNI"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ki-UB-yZ3" secondAttribute="bottom" constant="-2" id="F6Y-Zt-2AT"/>
+                            <constraint firstItem="4Ki-UB-yZ3" firstAttribute="leading" secondItem="3rm-2T-PSA" secondAttribute="leading" id="W7Z-yb-ZvS"/>
+                            <constraint firstAttribute="trailing" secondItem="4Ki-UB-yZ3" secondAttribute="trailing" id="cWy-w0-Zm8"/>
+                            <constraint firstItem="Jmr-zT-3PM" firstAttribute="top" secondItem="3rm-2T-PSA" secondAttribute="top" id="qQS-b6-RMR"/>
+                            <constraint firstItem="Jmr-zT-3PM" firstAttribute="leading" secondItem="3rm-2T-PSA" secondAttribute="leading" id="u4e-FF-8v7"/>
+                            <constraint firstAttribute="trailing" secondItem="Jmr-zT-3PM" secondAttribute="trailing" id="v0d-2Z-U1P"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3rm-2T-PSA" secondAttribute="bottom" id="9vq-MG-B2P"/>
+                    <constraint firstItem="3rm-2T-PSA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ign-hd-TKW"/>
+                    <constraint firstAttribute="trailing" secondItem="3rm-2T-PSA" secondAttribute="trailing" id="jgJ-Le-Qyt"/>
+                    <constraint firstItem="3rm-2T-PSA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jwG-q6-eKJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="postsCollectionView" destination="4Ki-UB-yZ3" id="cof-ha-aqw"/>
+            </connections>
+            <point key="canvasLocation" x="101.53846153846153" y="72.867298578199055"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Reel" width="24" height="24"/>
+        <image name="person.crop.rectangle" catalog="system" width="128" height="93"/>
+        <image name="squareshape.split.3x3" catalog="system" width="128" height="114"/>
+        <namedColor name="BarTintColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
