@@ -8,7 +8,7 @@
 import Foundation
 
 /// Post model
-/// - postImageName: image name of post
 struct Post {
+  /// Image name of post.
   var postImageName: String
 }
